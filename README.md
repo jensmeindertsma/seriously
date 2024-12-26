@@ -11,3 +11,7 @@ I've used `cargo-expand to unpack all the derive macros in use, and prettified w
 
 - [serialize.rs](./src/bin/serialize.rs)
 - [serialize_expanded.rs](./src/bin/serialize_expanded.rs)
+
+## Visitor!
+
+Ultimately I hope to use this example to learn more about the Visitor pattern which is quite mysterious to me.
