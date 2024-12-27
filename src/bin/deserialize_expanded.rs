@@ -216,8 +216,6 @@ impl<'de> Deserialize<'de> for Breed {
     where
         D: Deserializer<'de>,
     {
-        #[allow(non_camel_case_types)]
-        #[doc(hidden)]
         enum Field {
             Zero,
             One,
@@ -308,8 +306,9 @@ impl<'de> Deserialize<'de> for Breed {
                 }
             }
         }
-        #[doc(hidden)]
+
         const VARIANTS: &[&str] = &["Husky", "Teckel"];
+
         Deserializer::deserialize_enum(
             deserializer,
             "Breed",
