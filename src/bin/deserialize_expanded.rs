@@ -291,6 +291,7 @@ impl<'de> Deserialize<'de> for Breed {
             fn expecting(&self, formatter: &mut Formatter) -> fmt::Result {
                 Formatter::write_str(formatter, "enum Breed")
             }
+
             fn visit_enum<A>(self, data: A) -> Result<Self::Value, A::Error>
             where
                 A: EnumAccess<'de>,
