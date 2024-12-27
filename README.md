@@ -4,7 +4,7 @@ How does the serde crate actually work? And I mean particularly those magic `#[d
 
 ## cargo-expand
 
-I've used `cargo-expand to unpack all the derive macros in use, and prettified what code was generated. Take a look for yourself!
+I've used `cargo-expand to unpack all the derive macros in use, and prettified what code was generated. Here are the files for reference:
 
 - [deserialize.rs](./src/bin/deserialize.rs)
 - [deserialize_expanded.rs](./src/bin/deserialize_expanded.rs)
@@ -12,7 +12,7 @@ I've used `cargo-expand to unpack all the derive macros in use, and prettified w
 - [serialize.rs](./src/bin/serialize.rs)
 - [serialize_expanded.rs](./src/bin/serialize_expanded.rs)
 
-## Serialization explained
+## Serialization
 
 Let's start with serialization, as this is the simpler side of things.
 
