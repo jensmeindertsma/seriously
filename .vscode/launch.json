@@ -7,53 +7,6 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in library 'seriously'",
-      "cargo": {
-        "args": ["test", "--no-run", "--lib", "--package=seriously"],
-        "filter": {
-          "name": "seriously",
-          "kind": "lib"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug executable 'deserialize'",
-      "cargo": {
-        "args": ["build", "--bin=deserialize", "--package=seriously"],
-        "filter": {
-          "name": "deserialize",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'deserialize'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=deserialize",
-          "--package=seriously"
-        ],
-        "filter": {
-          "name": "deserialize",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
       "name": "Debug executable 'deserialize_expanded'",
       "cargo": {
         "args": ["build", "--bin=deserialize_expanded", "--package=seriously"],
@@ -68,75 +21,9 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'deserialize_expanded'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=deserialize_expanded",
-          "--package=seriously"
-        ],
-        "filter": {
-          "name": "deserialize_expanded",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug executable 'serialize'",
-      "cargo": {
-        "args": ["build", "--bin=serialize", "--package=seriously"],
-        "filter": {
-          "name": "serialize",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'serialize'",
-      "cargo": {
-        "args": ["test", "--no-run", "--bin=serialize", "--package=seriously"],
-        "filter": {
-          "name": "serialize",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
       "name": "Debug executable 'serialize_expanded'",
       "cargo": {
         "args": ["build", "--bin=serialize_expanded", "--package=seriously"],
-        "filter": {
-          "name": "serialize_expanded",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'serialize_expanded'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=serialize_expanded",
-          "--package=seriously"
-        ],
         "filter": {
           "name": "serialize_expanded",
           "kind": "bin"
